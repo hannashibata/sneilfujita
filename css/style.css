@@ -127,6 +127,7 @@ a {
         color: var(--color-a-hover);
         font-family: var(--font-special);
         font-size: 1.5em;
+        font-weight: normal;
     }
 }
 
@@ -184,6 +185,10 @@ p {
     line-height: 1.4;
     max-width: 65ch;
     text-wrap: pretty;
+}
+
+blockquote {
+    font-family: var(--font-sans-serif);
 }
 
 /* GLOBAL MEDIA
@@ -597,8 +602,8 @@ section {
     h1, h2, h3 {
         font-family: var(--font-special);
         font-weight: normal;
-        font-size: 4em;
-        line-height: 0.8;
+        font-size: 4.25em;
+        line-height: 0.85;
         color: var(--color-sitefooter-headings);
         text-align: right;
         margin: 0;
@@ -619,7 +624,9 @@ section {
             list-style: none;
             margin: 0;
             padding:0;
-            font-size: 2.7em;
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }
 
@@ -701,7 +708,7 @@ html {
 
 .observe-me {
     opacity: 0;
-    transition: all 1s ease-out 0.5s;
+    transition: all .75s ease-out 0.5s;
    
     &[data-viewstate="active"] {
     opacity: 1;
@@ -743,7 +750,7 @@ html {
 }
 
 .animate-from-right {
-    translate: 20px -10px;
+    translate: 20px 0;
     transition-delay: .25s;
 
     &[data-viewstate="active"] {
@@ -795,6 +802,12 @@ html {
 /* CUSTOM TYPEFACE FOR HEADER */
 .site-header h1 {
     font-family: 'corleone due';
+    font-weight: normal;
+}
+
+.site-header ul {
+    text-transform: uppercase;
+    /* QUESTION: how can I turn off the scaling? */
 }
 
 /* HOME
@@ -805,6 +818,26 @@ html {
 
 .red-bg {
     background-color: var(--color-primary);
+
+    a {
+        font-family: var(--font-sans-serif);
+        text-transform: uppercase;
+        rotate: 15deg;
+        /* QUESTION: 
+        (1)what would be the best way to make the background clickable as well?
+        (2)rotate tag not working? */
+    }
+
+    a:hover {
+        font-family: var(--font-special);
+        line-height: .9;
+    }
+}
+
+.red-bg:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+    /* QUESTION: what would be the best way to move the surrounding elements? */
 }
 
 .home-hero-grid {
@@ -866,7 +899,6 @@ html {
 }
 
 .mid03 {
-    color: black;
     grid-column: 6 / 8;
     grid-row: 3 / 5;
     clip-path: polygon(0 4%, 92% 0, 100% 100%, 14% 100%);
@@ -911,7 +943,7 @@ html {
 }
 
 #about h2 {
-    font-style: uppercase;
+    text-transform: uppercase;
 }
 
 
@@ -944,6 +976,10 @@ html {
   
 .site-header li {
     margin-left: 1em;
+}
+
+.sub-home-hero h2 {
+    text-transform: uppercase;
 }
 
 .credit {
@@ -998,6 +1034,10 @@ html {
 }
 
 /* TIMELINE PAGE */
+.page-timeline header a {
+    color: var(--color-white);
+}
+
 
 /* HERO
 /* ----------------------------------------------- */
