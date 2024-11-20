@@ -99,7 +99,7 @@ CSS TABLE OF CONTENTS
 /* GLOBAL RESET
  * Change box-sizing for all to border-obox.
  * Remove the default 8px margin on the body.
-*/
+/* ----------------------------------------------- */
 
 * { box-sizing: border-box; }
 body { margin: 0; }
@@ -107,7 +107,7 @@ body { margin: 0; }
 /* GLOBAL COLORS
  * Set the color of the main body backround.
  * Set the color of the main body text, all headings H1, text links & hover states, etc.
-*/
+/* ----------------------------------------------- */
 
 body {
     background-color: var(--color-light-bg);
@@ -125,10 +125,14 @@ a {
     color: var(--color-a-dark);
     &:hover {
         color: var(--color-a-hover);
-        font-family: var(--font-special);
-        font-size: 1.5em;
-        font-weight: normal;
     }
+}
+
+/* Change typeface while hovering in site-nav */
+nav a:hover {
+    font-family: var(--font-special);
+    font-size: 1.5em;
+    font-weight: normal;
 }
 
 /* GLOBAL TYPOGRAPHY
@@ -136,7 +140,7 @@ a {
  * Set the font & margin for all headings.
  * Set size and leading for all headings.
  * Limit the width of all paragraphs and adding new school widow slayer.
-*/
+/* ----------------------------------------------- */
 
 body {
     font-family: var(--font-body);
@@ -192,14 +196,16 @@ blockquote {
 }
 
 /* GLOBAL MEDIA
- * Make all images shrink on small screens */
+ * Make all images shrink on small screens
+/* ----------------------------------------------- */
 img {
     max-width: 100%;
     height: auto; 
 }
 
 /* GLOBAL HELPERS
- * Hide elements visually but not from screen readers and search engines */
+ * Hide elements visually but not from screen readers and search engines
+/* ----------------------------------------------- */
 .hide-visually {
     position: absolute;
     top: -9999px;
@@ -391,7 +397,7 @@ body {
         /* MAKE SITE NAV LINKS BIG LIKE BUTTONS */
         a {
             display: block;
-            padding: 1em;
+            padding: 10px;
         }
 
     }
@@ -622,10 +628,18 @@ section {
             margin: 0;
             padding:0;
             font-size: 2em;
+            line-height: 1;
             font-weight: bold;
             text-transform: uppercase;
         }
+
+        li {
+            min-height: 1.5em;
+            display: grid;
+            align-items: center;
+        }
     }
+
 
 }
 
@@ -804,14 +818,19 @@ html {
 
 .site-header ul {
     text-transform: uppercase;
-    /* QUESTION: how can I turn off the scaling? */
+    line-height: 1;
+
+    li {
+        display: grid;
+        align-items: center;
+    }
 }
 
 /* HOME
 -----------------------------------------------
  * Home animated nav
  * Grid system
- */
+ * ----------------------------------------------- */
 
 .red-bg {
     background-color: var(--color-primary);
@@ -820,9 +839,7 @@ html {
         font-family: var(--font-sans-serif);
         text-transform: uppercase;
         rotate: 15deg;
-        /* QUESTION: 
-        (1)what would be the best way to make the background clickable as well?
-        (2)rotate tag not working? */
+        /* QUESTION: rotate tag not working? */
     }
 
     a:hover {
@@ -862,8 +879,6 @@ html {
     background-color: var(--color-red);
     grid-column: 1 / 5;
     grid-row: 1 / 5;
-
-     /* QUESTION: How can I not show the backgorund color? */
     clip-path: polygon(0 0, 93% 0, 100% 83%, 13% 92%);
 }
 
@@ -949,7 +964,7 @@ html {
  * Shared styling
  * Rotated header
  * Credits for artowrk
- */
+ * ----------------------------------------------- */
 
 .rotated-header {
     --site-header-height: 60px;
@@ -973,6 +988,8 @@ html {
   
 .site-header li {
     margin-left: 1em;
+    min-width: 180px;
+    text-align: center;
 }
 
 .sub-home-hero h2 {
@@ -986,7 +1003,7 @@ html {
 }
 
 /* SUBPAGE: SELECTED WORKS
------------------------------------------------ */
+ * ----------------------------------------------- */
 .page-works .hero {
     position: relative;
 }
