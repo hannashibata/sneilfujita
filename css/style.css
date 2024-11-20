@@ -84,7 +84,7 @@ CSS TABLE OF CONTENTS
     --color-sitefooter-a: var(--color-white);
 
     /*  DEFINE ALL FONTS USED HERE */
-    --font-body: 'Helvetica', system-ui, Arial, sans-serif;
+    --font-body: 'Roboto', system-ui, Arial, sans-serif;
     --font-sans-serif: 'Besley', Georgia, serif;
     --font-special: 'Corleone Due';
 
@@ -572,9 +572,6 @@ section {
 
 /* HERO SECTION */
 .hero {
-    /* background-color: var(--color-hero-bg);
-    color: var(--color-hero-text); */
-
     /* ADD MORE SPACE ON TOP FOR THE ABSOLUTE HEADER */
     padding-top: calc(4em + var(--unit-large));
 
@@ -947,9 +944,9 @@ html {
 }
 
 
-/* CUSTOM STYLING FOR SUBPAGES
+/* CUSTOM STYLING FOR ALL THE SUBPAGES
 -----------------------------------------------
- * Common styling for two subpages 
+ * Shared styling
  * Rotated header
  * Credits for artowrk
  */
@@ -988,7 +985,8 @@ html {
     font-weight: 400;
 }
 
-/* SELECTED WORKS PAGE */
+/* SUBPAGE: SELECTED WORKS
+----------------------------------------------- */
 .page-works .hero {
     position: relative;
 }
@@ -1033,14 +1031,12 @@ html {
     background-color: var(--color-tertiary);
 }
 
-/* TIMELINE PAGE */
+/* SUBPAGE: TIMELINE
+----------------------------------------------- */
 .page-timeline header a {
     color: var(--color-white);
 }
 
-
-/* HERO
-/* ----------------------------------------------- */
 .page-timeline .hero {
 height: 100svh;
 background-color: var(--color-black);
@@ -1052,12 +1048,21 @@ justify-content: center;
 text-align: center;
 }
 
+.page-timeline .hero h2 {
+    font-family: var(--font-special);
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 0.9;
+}
+
+/* .puppetmaster {
+} */
+
 .page-timeline .site-menu {
     color: var(--color-white);
 }
 
-/* TIMELINE
-/* ----------------------------------------------- */
+/* TIMELINE */
 #timeline ul {
 /* background-color: var(--color-white); */
 padding: 50px 0;
