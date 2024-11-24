@@ -1074,6 +1074,7 @@ text-align: center;
 
 /* .puppetmaster {
 } */
+  
 
 .page-timeline .site-menu {
     color: var(--color-white);
@@ -1081,7 +1082,6 @@ text-align: center;
 
 /* TIMELINE */
 #timeline ul {
-/* background-color: var(--color-white); */
 padding: 50px 0;
 }
 
@@ -1161,6 +1161,71 @@ font-size: 1.5em;
 font-weight: bold;
 margin-bottom: 0.2em;
 }
+
+/* Animated background/map */
+/*  QUESTION: I implemented from the codepen but does not work. 
+    Is is because I'm using id instead of class? or something else? 
+    Not only the animation but the flex box does not work either. */
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .event {
+      margin: 0;
+      padding: 0 6em;
+      /* padding: 50vh 6em; */
+      min-height: 110svh;
+    }
+  
+    .map {
+      background-image: url(../page-timeline/img/map-2312x1536.jpg);
+      background-repeat: no-repeat;
+  
+      /*  this is the default animation starting point    */
+      background-size: 100%;
+      background-position: 50% 50%;
+      height: 100svh;
+      /* background-color: red; */
+  
+      /*  div is fixed to the parent    */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      transition: all 2s ease-out 0.5s;
+    }
+  }
+
+/* SCROLL TRIGGERED ANIMATION */
+
+#timeline:has(.observe-me[data-viewstate="active"] .event01) .map {
+    background-size: 600%;
+    background-position: 0 55%;
+}
+  
+#timeline:has(.observe-me[data-viewstate="active"] .event02) .map {
+    background-size: 400%;
+    background-position: 10% 45%;
+}
+
+#timeline:has(.observe-me[data-viewstate="active"] .event03) .map {
+    background-size: 600%;
+    background-position: 12% 40%;
+}
+
+#timeline:has(.observe-me[data-viewstate="active"] .event04) .map {
+    background-size: 400%;
+    background-position: 50% 45%;
+}
+
+#timeline:has(.observe-me[data-viewstate="active"] .event05) .map {
+    background-size: 600%;
+    background-position: 27% 42%;
+}
+
 
 /* Media queries for timeline
 -------------------------------------------------- */
