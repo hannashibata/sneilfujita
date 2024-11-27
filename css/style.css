@@ -1,7 +1,7 @@
-/* -----------------------------------------------
---------------------------------------------------
-
+/* 
 CSS TABLE OF CONTENTS
+
+# BASIC CSS FROM PARTIALS
 
 # GLOBAL STYLES
     # GLOBAL VARIABLES
@@ -11,7 +11,7 @@ CSS TABLE OF CONTENTS
     # GLOBAL MEDIA
     # GLOBAL HELPERS
 
-# LAYOUT
+# LAYOUT & GRID SYSTEM (SEE @import)
     # MEDIA QUERIES / BREAKPOINTS (RESPONSIVE TYPOGRAPHY)
     # CONTAINER
     # GRID
@@ -36,19 +36,25 @@ CSS TABLE OF CONTENTS
 
 # CUSTOM STYLING
 
---------------------------------------------------
--------------------------------------------------- */
+ */
+
+/* ----------------------------------------------- */
+/* BASIC CSS FROM PARTIALS */
+/* ----------------------------------------------- */
+
+@import url(partials/grid.css);
+
 
 /* ----------------------------------------------- */
 /* GLOBAL STYLES  */
 /* ----------------------------------------------- */
 
-/* GLOBAL VARIABLES */
+/* GLOBAL VARIABLES
+ * Definitions for commonly used colors, typeface, sizing-units.
+/* -----------------------------------------------  */
 
 :root {
-
-    /* DEFINE ALL COMMONLY USED COLORS HERE */
-
+    /* COLORS */
     --color-primary: #E63A0C;
     --color-secondary: #AB4D83;
     --color-tertiary: #FD9F00;
@@ -62,7 +68,7 @@ CSS TABLE OF CONTENTS
     --color-text-headings-white: var(--color-white);
 
     --color-a: var(--color-primary);
-    --color-a-hover: varvar(--color-tertiary);
+    --color-a-hover: var(--color-tertiary);
     --color-a-dark: var(--color-black);
     --color-a-light: var(--color-white);
 
@@ -83,7 +89,7 @@ CSS TABLE OF CONTENTS
     --color-sitefooter-headings: var(--color-black);
     --color-sitefooter-a: var(--color-white);
 
-    /*  DEFINE ALL FONTS USED HERE */
+    /* TYPEFACES */
     --font-body: 'Roboto', system-ui, Arial, sans-serif;
     --font-sans-serif: 'Besley', Georgia, serif;
     --font-special: 'Corleone Due';
@@ -233,214 +239,10 @@ img {
     }
 }
 
-/* @import url(partials/grid.css); */
 /* ----------------------------------------------- */
-/* LAYOUT */
+/* LAUOUT & GRID  */
 /* ----------------------------------------------- */
-
-/* RESPONSIVE TYPOGRAPHY VIA MEDIA QUERIES */
-
-/* SMALL SCREENS (Mobile , 767px) */
-body {
-    /* Set the default font size */
-    font-size: 87.5%;
-}
-
-/* MEDIUM SCREENS ( Tablets < 1200px ) */
-@media (min-width: 768px) {
-    body {
-        /* Set the medium screens and highr font size to 16px */
-        font-size: 100%;
-    }
-}
-
-/* LARGE SCREENS ( Laptops & Desktop > 1200px ) */
-
-@media (min-width: 1200px) {
-    body {
-        /* Set the medium screens and highr font size to 16px */
-        font-size: 112.5%;
-    }
-}
-
-/* CONTAINER */
-.container {
-    /* SET THE MAX WIDTH OF YOUR SITE (eg 1200px) */
-    max-width: var(--container-width);
-
-    /* CENTER THE CONTAINER HORIZONTALLY*/
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* GRID */
-.row {
-    --gridgap: 2em;
-}
-
-/* - All the children under row */
-.row>* {
-
-    /* - Setting bttom margin for each fraction */
-    margin-top: var(--gridgap);
-    margin-bottom: var(--gridgap);
-}
-
-@media (min-width: 768px) {
-
-    /* Create grid in 12 columns, with equal fractions */
-    .row {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: var(--gridgap);
-    }
-
-    /* Commonly ysed semantic column widths & Setting size for each grid */
-    .one-half {
-        grid-column: auto / span 6;
-    }
-
-    .one-third {
-        grid-column: auto / span 4;
-    }
-
-    .two-thirds {
-        grid-column: auto / span 8;
-    }
-
-    .one-fourth {
-        grid-column: auto / span 3;
-    }
-
-    .three-fourths {
-        grid-column: auto / span 9;
-    }
-
-    /* 12 Column Classes: how many columns to overlap */
-    .col-1 {
-        grid-column: auto / span 1;
-    }
-
-    .col-2 {
-        grid-column: auto / span 2;
-    }
-
-    .col-3 {
-        grid-column: auto / span 3;
-    }
-
-    .col-4 {
-        grid-column: auto / span 4;
-    }
-
-    .col-5 {
-        grid-column: auto / span 5;
-    }
-
-    .col-6 {
-        grid-column: auto / span 6;
-    }
-
-    .col-7 {
-        grid-column: auto / span 7;
-    }
-
-    .col-8 {
-        grid-column: auto / span 8;
-    }
-
-    .col-9 {
-        grid-column: auto / span 9;
-    }
-
-    .col-10 {
-        grid-column: auto / span 10;
-    }
-
-    .col-11 {
-        grid-column: auto / span 11;
-    }
-
-    .col-12 {
-        grid-column: auto / span 12;
-    }
-
-    /* Centered columns */
-    .one-half.centered {
-        grid-column: 4 / span 6;
-    }
-
-    .one-third.centered {
-        grid-column: 5 / span 4;
-    }
-
-    .two-thirds.centered {
-        grid-column: 3 / span 8;
-    }
-
-    /* Pushes: which column to start */
-    .push-1 {
-        grid-column-start: 2;
-    }
-
-    .push-2 {
-        grid-column-start: 3;
-    }
-
-    .push-3 {
-        grid-column-start: 4;
-    }
-
-    .push-4 {
-        grid-column-start: 5;
-    }
-
-    .push-5 {
-        grid-column-start: 6;
-    }
-
-    .push-6 {
-        grid-column-start: 7;
-    }
-
-    .push-7 {
-        grid-column-start: 8;
-    }
-
-    .push-8 {
-        grid-column-start: 9;
-    }
-
-    .push-9 {
-        grid-column-start: 10;
-    }
-
-    .push-10 {
-        grid-column-start: 11;
-    }
-
-    .push-11 {
-        grid-column-start: 12;
-    }
-
-    /* SWAP (REVERSE) COLUMNS - WORKS ONLY w/ 2 CHILDREN  */
-    .row.swapped>*:first-child {
-        order: 2;
-    }
-
-    .row.swapped>*:last-child {
-        order: 1;
-    }
-
-}
-
-/* FOR DEMO PURPOSES */
-.demo>* {
-    background-color: #444;
-    padding: 1em;
-    ;
-    text-align: center;
-}
+/* See top, @import url(partials/grid.css); */
 
 /* ----------------------------------------------- */
 /* SITE STRUCTURE  */
@@ -757,7 +559,6 @@ section {
         }
     }
 
-
 }
 
 /* ----------------------------------------------- */
@@ -818,7 +619,6 @@ section {
     }
 
 }
-
 
 
 /* ----------------------------------------------- */
@@ -951,24 +751,46 @@ html {
 
 .red-bg {
     background-color: var(--color-primary);
+    font-family: var(--font-sans-serif);
 
-    a {
-        font-family: var(--font-sans-serif);
+    span {
         text-transform: uppercase;
-        rotate: 15deg;
-        /* QUESTION: rotate tag not working? */
+        display: block;
+        text-align: right;
+        font-size: 0.75em;
     }
 
-    a:hover {
-        font-family: var(--font-special);
-        line-height: .9;
+    span.span-about {
+        rotate: 30deg;
+        translate: 15% 200%;
+    }
+
+    span.span-works {
+        rotate: -30deg;
+        translate: 10% 100%;
+    }
+
+    span.span-timeline {
+        rotate: 30deg;
+        translate: 5% 150%;
+    }
+
+    &:hover {
+        /* font-family: var(--font-special); */
+        /* line-height: .9; */
+        color: var(--color-white);
     }
 }
 
 .red-bg:hover {
     transform: scale(1.1);
-    transition-duration: .5s;
+    transition-duration: .25s;
     /* QUESTION: what would be the best way to move the surrounding elements? */
+}
+
+.bierut {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .home-hero-grid {
@@ -978,6 +800,15 @@ html {
     grid-template-columns: 3.5% 4.5% 7% 2% 28% 7% 8% 15% 25%;
     grid-template-rows: 30% 2% 2% 18% 24% 2% 10% 12%;
 }
+
+/* not able to control */
+/* .home-hero-grid:has(.mid01:hover) {
+    #top01.observe-me.animate-from-upperleft01, .observe-me.animate-from-upperleft02, .observe-me.animate-from-bottomleft {
+        scale: .9;
+        transition: scale .1s linear 0 !important;
+        border: 3px solid yellow;
+    }
+} */
 
 .home-hero-grid img {
     width: 100%;
@@ -1283,7 +1114,6 @@ time {
 }
 
 /* Animated background/map */
-/*  QUESTION: The flex box does not work */
 
 #timeline,
 .event {
@@ -1390,7 +1220,7 @@ time {
 } */
 
 body * {
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 
 /* .home-hero-grid-item {
