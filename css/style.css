@@ -1008,7 +1008,7 @@ html {
 
 .page-timeline .hero {
     height: 100svh;
-    background-color: var(--color-black);
+    /* background-color: var(--color-black); */
     color: var(--color-white);
     /* padding: auto; */
     display: flex;
@@ -1123,7 +1123,7 @@ time {
 
     .event {
         margin: 0;
-        padding: 0 6em;
+        padding: 0 0;
         /* padding: 50vh 6em; */
         min-height: 110svh;
     }
@@ -1151,30 +1151,30 @@ time {
 
 /* SCROLL TRIGGERED ANIMATION */
 
-/* map doesn't work! (;_;) */
-#timeline:has(.observe-me[data-viewstate="active"] .event01) .map {
-    background-size: 100%;
-    background-position: 55% 55%;
+/* QUESTION: custom property? */
+#timeline:has(.event01[data-viewstate="active"]) .map {
+    background-size: 800%;
+    background-position: 37% 55%;
 }
 
-#timeline:has(.observe-me[data-viewstate="active"] .event02) .map {
+#timeline:has(.event02[data-viewstate="active"]) .map {
     background-size: 400%;
-    background-position: 10% 45%;
+    background-position: 48% 48%;
 }
 
-#timeline:has(.observe-me[data-viewstate="active"] .event03) .map {
+#timeline:has(.event03[data-viewstate="active"]) .map {
     background-size: 600%;
-    background-position: 12% 40%;
+    background-position: 52% 42%;
 }
 
-#timeline:has(.observe-me[data-viewstate="active"] .event04) .map {
-    background-size: 400%;
-    background-position: 50% 45%;
+#timeline:has(.event04[data-viewstate="active"]) .map {
+    background-size: 700%;
+    background-position: 90% 42%;
 }
 
-#timeline:has(.observe-me[data-viewstate="active"] .event05) .map {
+#timeline:has(.event05[data-viewstate="active"]) .map {
     background-size: 600%;
-    background-position: 27% 42%;
+    background-position: 62% 44%;
 }
 
 
@@ -1220,9 +1220,9 @@ time {
     color: rgb(0 0 0 /0.5);
 } */
 
-body * {
+/* body * {
     border: 1px solid blue;
-}
+} */
 
 /* .home-hero-grid-item {
     border: 2px solid blue;
