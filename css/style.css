@@ -1129,7 +1129,7 @@ time {
     }
 
     .map {
-        background-image: url(../page-timeline/img/map-2312x1536.jpg);
+        background-image: url(../page-timeline/img/fujita-map-draft.svg);
         background-repeat: no-repeat;
 
         /*  this is the default animation starting point    */
@@ -1151,9 +1151,10 @@ time {
 
 /* SCROLL TRIGGERED ANIMATION */
 
+/* map doesn't work! (;_;) */
 #timeline:has(.observe-me[data-viewstate="active"] .event01) .map {
-    background-size: 600%;
-    background-position: 0 55%;
+    background-size: 100%;
+    background-position: 55% 55%;
 }
 
 #timeline:has(.observe-me[data-viewstate="active"] .event02) .map {
