@@ -501,7 +501,7 @@ section {
 }
 
 .page-sub .hero {
-    border: 10px solid yellow;
+    /* border: 10px solid yellow; */
     padding-left: calc(3em + var(--unit-small));
 }
 
@@ -1008,7 +1008,7 @@ html {
 
 .page-timeline .hero {
     height: 100svh;
-    /* background-color: var(--color-black); */
+    background-color: var(--color-black);
     color: var(--color-white);
     /* padding: auto; */
     display: flex;
@@ -1129,7 +1129,7 @@ time {
     }
 
     .map {
-        background-image: url(../page-timeline/img/fujita-map-draft.svg);
+        background-image: url(../page-timeline/img/fujita-map.svg);
         background-repeat: no-repeat;
 
         /*  this is the default animation starting point    */
