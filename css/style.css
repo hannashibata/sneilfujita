@@ -952,6 +952,8 @@ html {
 
 /* SUBPAGE: SELECTED WORKS
  * ----------------------------------------------- */
+
+ /* QUESTION: the header is pushing out the image what can i do? */
 .page-works .hero {
     position: relative;
 }
@@ -1002,6 +1004,8 @@ html {
 
 /* SUBPAGE: TIMELINE
 ----------------------------------------------- */
+/* QUESTION: (1) how should I add json? (2) what would be the best way to layout the images  */
+
 .page-timeline header a {
     color: var(--color-white);
 }
