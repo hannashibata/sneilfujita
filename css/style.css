@@ -1028,8 +1028,9 @@ html {
     line-height: 0.9;
 }
 
-/* .puppetmaster {
-} */
+.puppetmaster {
+    margin-inline: auto;
+}
 
 .page-timeline .site-menu {
     color: var(--color-white);
@@ -1126,10 +1127,22 @@ time {
     justify-content: center;
 
     .event {
-        margin: 0;
-        padding: 0 0;
+        /* margin: 0;
+        padding: 0 0; */
         /* padding: 50vh 6em; */
-        min-height: 110svh;
+        /* min-height: 110svh; */
+        border: 1px solid green;
+        /* margin-top: 50vh; */
+        /* margin-bottom: 60vh; */
+
+        /* Margin triggers the animation when there is no image: margin spaces out */
+        margin: 70vh 0;
+
+    }
+
+    .event00 {
+     margin: 0;
+     padding: 0 0 20vh 0;   
     }
 
     .map {
@@ -1137,8 +1150,10 @@ time {
         background-repeat: no-repeat;
 
         /*  this is the default animation starting point    */
-        background-size: 100%;
-        background-position: 50% 50%;
+        --background-size: 100%;
+        --background-position: 50% 50%;
+        background-size: var(--background-size);
+        background-position: var(--background-position);
         height: 100svh;
         /* background-color: red; */
 
@@ -1156,29 +1171,34 @@ time {
 /* SCROLL TRIGGERED ANIMATION */
 
 /* QUESTION: custom property? */
+#timeline:has(.event00[data-viewstate="active"]) .map {
+    --background-size: 100%;
+    --background-position: 50% 50%;
+}
+
 #timeline:has(.event01[data-viewstate="active"]) .map {
-    background-size: 800%;
-    background-position: 37% 55%;
+    --background-size: 800%;
+    --background-position: 37% 55%;
 }
 
 #timeline:has(.event02[data-viewstate="active"]) .map {
-    background-size: 400%;
-    background-position: 48% 48%;
+    --background-size: 400%;
+    --background-position: 48% 48%;
 }
 
 #timeline:has(.event03[data-viewstate="active"]) .map {
-    background-size: 600%;
-    background-position: 52% 42%;
+    --background-size: 600%;
+    --background-position: 52% 42%;
 }
 
 #timeline:has(.event04[data-viewstate="active"]) .map {
-    background-size: 700%;
-    background-position: 90% 42%;
+    --background-size: 700%;
+    --background-position: 90% 42%;
 }
 
 #timeline:has(.event05[data-viewstate="active"]) .map {
-    background-size: 600%;
-    background-position: 62% 44%;
+    --background-size: 600%;
+    --background-position: 62% 44%;
 }
 
 

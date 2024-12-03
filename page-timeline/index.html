@@ -52,8 +52,13 @@
 
       <div class="sub-home-hero container">
 
-        <img class="puppetmaster observe-me animate-from-top parallax-onscroll" data-parallax-speed="-1" src="img/fujita_puppetmaster.svg"
-          alt="The image of a puppet master's hand, from the Godfather." width="400" height="400">
+        <!-- <img class="puppetmaster observe-me animate-from-top parallax-onscroll" data-parallax-speed="-1" src="img/fujita_puppetmaster.svg"
+          alt="The image of a puppet master's hand, from the Godfather." width="400" height="400"> -->
+        
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+        <!-- QUESTION: why is it not fadingin? -->
+        <dotlottie-player class="puppetmaster animate-from-top parallax-onscroll" data-parallax-speed="2" src="img/puppetmaster.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
 
         <div class="text-wrapper parallax-onscroll" data-parallax-speed=".5">
           <h2 class="observe-me animate-from-top">&ldquo;What did I hate? There wasn&rsquo;t anything about actual
@@ -74,11 +79,19 @@
 
       <div class="container">
 
+        <div class="event event00 observe-me">
+          <!-- this is empty -->
+        </div>
+
         <div class="event event01 observe-me">
           <h2>Born in Hawai&lsquo;i</h2>
           <time datetime="1921-05-16">1921</time>
           <p>S. Neil Fujita was a born in Kauai, Hawaii in 1921. It was the year that the stock market crash on Wall Street took place, which was to have international effects and be widely regarded as the inciting incident of the Great Depression.
           </p>
+        </div>
+
+        <div class="hawaii-image">
+          <img src="img/map-2312x1536.jpg" alt="placeholder" width="800" height="400">
         </div>
   
         <div class="event event02 observe-me">
