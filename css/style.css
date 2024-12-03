@@ -28,7 +28,7 @@ CSS TABLE OF CONTENTS
             # HERO
     # FOOTER
 
-# UI COMPONENTS
+# UI COMPONENTS (SEE @import)
     # BUTTONS
 
 # ANIMATION
@@ -43,6 +43,7 @@ CSS TABLE OF CONTENTS
 /* ----------------------------------------------- */
 
 @import url(partials/grid.css);
+@import url(partials/components.css);
 
 
 /* ----------------------------------------------- */
@@ -564,62 +565,8 @@ section {
 /* ----------------------------------------------- */
 /* UI COMPONENTS */
 /* ----------------------------------------------- */
-
-/* BUTTONS */
-.button {
-    /* SET THE BUTTON COLORS */
-    border: 1px solid var(--color-a-dark);
-    background-color: var(--color-a-dark);
-    color: white;
-
-    /* ENABLE BOX MODEL STYLING */
-    display: inline-block;
-    padding: var(--unit-small);
-    margin: var(--unit-small) 0;
-
-    /* GET RID OF THE UNDERLINE */
-    text-decoration: none;
-
-    +.button {
-        margin-left: var(--unit-small);
-    }
-
-    &:hover {
-        color: #fff;
-        background-color: var(--color-a-darker);
-        border-color: var(--color-a-darker);
-
-    }
-
-    /* LIGHT BUTTON VARIANT */
-    &.light {
-        border-color: var(--color-a-light);
-        background-color: var(--color-a-light);
-        color: var(--color-a-darker);
-
-        &:hover {
-            border-color: var(--color-a-lighter);
-            background-color: var(--color-a-lighter);
-        }
-    }
-
-}
-
-/* SIMPLE CARDS */
-.centered-card-group {
-
-    display: flex;
-    justify-content: center;
-    gap: var(--unit-small);
-
-    .centered-card {
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: var(--unit-small);
-    }
-
-}
-
+/* Styling for buttons, cards */
+/* See top, @import url(partials/components.css); */
 
 /* ----------------------------------------------- */
 /* ANIMATION */
@@ -642,9 +589,8 @@ html {
         opacity: 1;
     }
 }
-
 .animate-from-top {
-    translate: 0 -10px;
+    translate: 0 -100px;
 
     &[data-viewstate="active"] {
         translate: 0 0;
@@ -1004,7 +950,6 @@ html {
 
 /* SUBPAGE: TIMELINE
 ----------------------------------------------- */
-/* QUESTION: (1) how should I add json? (2) what would be the best way to layout the images  */
 
 .page-timeline header a {
     color: var(--color-white);
@@ -1014,7 +959,8 @@ html {
     height: 100svh;
     background-color: var(--color-black);
     color: var(--color-white);
-    /* padding: auto; */
+    padding: 0;
+    /* display: block; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1026,6 +972,7 @@ html {
     font-weight: normal;
     font-size: 3em;
     line-height: 0.9;
+    margin: 0 1em 0 2em;
 }
 
 .puppetmaster {

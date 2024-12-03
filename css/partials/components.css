@@ -1,0 +1,58 @@
+/* ----------------------------------------------- */
+/* UI COMPONENTS */
+/* ----------------------------------------------- */
+
+/* BUTTONS */
+.button {
+    /* SET THE BUTTON COLORS */
+    border: 1px solid var(--color-a-dark);
+    background-color: var(--color-a-dark);
+    color: white;
+
+    /* ENABLE BOX MODEL STYLING */
+    display: inline-block;
+    padding: var(--unit-small);
+    margin: var(--unit-small) 0;
+
+    /* GET RID OF THE UNDERLINE */
+    text-decoration: none;
+
+    +.button {
+        margin-left: var(--unit-small);
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: var(--color-a-darker);
+        border-color: var(--color-a-darker);
+
+    }
+
+    /* LIGHT BUTTON VARIANT */
+    &.light {
+        border-color: var(--color-a-light);
+        background-color: var(--color-a-light);
+        color: var(--color-a-darker);
+
+        &:hover {
+            border-color: var(--color-a-lighter);
+            background-color: var(--color-a-lighter);
+        }
+    }
+
+}
+
+/* SIMPLE CARDS */
+.centered-card-group {
+
+    display: flex;
+    justify-content: center;
+    gap: var(--unit-small);
+
+    .centered-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: var(--unit-small);
+    }
+
+}
