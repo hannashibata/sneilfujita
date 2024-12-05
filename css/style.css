@@ -214,7 +214,6 @@ blockquote {
     font-family: var(--font-sans-serif);
     padding: 0;
     margin: 0;
-    border: 2px solid yellow;
 }
 
 /* GLOBAL MEDIA
@@ -860,6 +859,12 @@ html {
 #about h2 {
     text-transform: uppercase;
 }
+
+/* Rotated images */
+.rotate-5 {
+    rotate: -5deg;
+}
+
 
 
 /* CUSTOM STYLING FOR ALL THE SUBPAGES
