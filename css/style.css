@@ -11,7 +11,7 @@ CSS TABLE OF CONTENTS
     # GLOBAL MEDIA
     # GLOBAL HELPERS
 
-# LAYOUT & GRID SYSTEM (SEE @import)
+# LAYOUT & GRID SYSTEM =====> @import
     # MEDIA QUERIES / BREAKPOINTS (RESPONSIVE TYPOGRAPHY)
     # CONTAINER
     # GRID
@@ -28,7 +28,7 @@ CSS TABLE OF CONTENTS
             # HERO
     # FOOTER
 
-# UI COMPONENTS (SEE @import)
+# UI COMPONENTS =====> @import
     # BUTTONS
 
 # ANIMATION
@@ -706,7 +706,7 @@ html {
 -----------------------------------------------
  * Home animated nav
  * Grid system
- * ----------------------------------------------- */
+------------------------------------------------- */
 
 .red-bg-title,
 .red-bg {
@@ -872,7 +872,7 @@ html {
  * Shared styling
  * Rotated header
  * Credits for artowrk
- * ----------------------------------------------- */
+-------------------------------------------------- */
 
 .rotated-header {
     --site-header-height: 60px;
@@ -911,7 +911,7 @@ html {
 }
 
 /* SUBPAGE: SELECTED WORKS
- * ----------------------------------------------- */
+-------------------------------------------------- */
 
  /* QUESTION: the header is pushing out the image what can i do? */
 .page-works .hero {
@@ -1006,6 +1006,9 @@ html {
     justify-content: center;
 
     .event {
+        /* laying out copy and image */
+        display: grid;
+
         /* margin: 0;
         padding: 0 0; */
         /* padding: 50vh 6em; */
@@ -1014,6 +1017,7 @@ html {
         /* margin-top: 50vh; */
         /* margin-bottom: 60vh; */
 
+        
         /* Margin triggers the animation when there is no image: margin spaces out */
         margin: 70vh 0;
 
@@ -1049,33 +1053,44 @@ html {
 
 /* SCROLL TRIGGERED ANIMATION */
 
-/* QUESTION: custom property? */
+/* Default */
 #timeline:has(.event00[data-viewstate="active"]) .map {
     --background-size: 100%;
     --background-position: 50% 50%;
 }
 
+/* Hawaii */
 #timeline:has(.event01[data-viewstate="active"]) .map {
     --background-size: 800%;
     --background-position: 37% 55%;
 }
 
+/* California */
 #timeline:has(.event02[data-viewstate="active"]) .map {
     --background-size: 400%;
     --background-position: 48% 48%;
 }
 
+/* Wyoming */
 #timeline:has(.event03[data-viewstate="active"]) .map {
     --background-size: 600%;
     --background-position: 52% 42%;
 }
 
+/* Mississippi */
 #timeline:has(.event04[data-viewstate="active"]) .map {
+    --background-size: 700%;
+    --background-position: 57% 52%;
+}
+
+/* EU */
+#timeline:has(.event05[data-viewstate="active"]) .map {
     --background-size: 700%;
     --background-position: 90% 42%;
 }
 
-#timeline:has(.event05[data-viewstate="active"]) .map {
+/* New York */
+#timeline:has(.event06[data-viewstate="active"]) .map {
     --background-size: 600%;
     --background-position: 62% 44%;
 }
