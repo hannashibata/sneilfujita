@@ -212,6 +212,9 @@ p {
 
 blockquote {
     font-family: var(--font-sans-serif);
+    padding: 0;
+    margin: 0;
+    border: 2px solid yellow;
 }
 
 /* GLOBAL MEDIA
@@ -223,8 +226,10 @@ img {
 }
 
 /* GLOBAL HELPERS
- * Hide elements visually but not from screen readers and search engines
+ * Handy helper elements to have
 /* ----------------------------------------------- */
+
+/* Hide elements only visually */
 .hide-visually {
     position: absolute;
     top: -9999px;
@@ -238,6 +243,16 @@ img {
         left: -9999px;
     }
 }
+
+.text-align-right {
+    text-align: right;
+}
+
+/* Spacer for stacked article */
+.add-margin-top {
+    margin-top: var(--unit-large);
+}
+
 
 /* ----------------------------------------------- */
 /* LAUOUT & GRID  */
@@ -722,8 +737,6 @@ html {
     }
 
     &:hover {
-        /* font-family: var(--font-special); */
-        /* line-height: .9; */
         color: var(--color-white);
     }
 }
@@ -737,6 +750,10 @@ html {
 .bierut {
     background-color: var(--color-primary);
     color: var(--color-white);
+}
+
+.bierut blockquote {
+    margin: 0 2em;
 }
 
 .home-hero-grid {
