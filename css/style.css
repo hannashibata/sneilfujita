@@ -243,6 +243,10 @@ img {
     }
 }
 
+/* .display-flex {
+    display: flex;
+} */
+
 .text-align-right {
     text-align: right;
 }
