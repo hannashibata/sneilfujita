@@ -1064,37 +1064,37 @@ html {
 }
 
 /* Hawaii */
-#timeline:has(.event01[data-viewstate="active"]) .map {
+#timeline:has(.event-hi[data-viewstate="active"]) .map {
     --background-size: 800%;
     --background-position: 37% 55%;
 }
 
 /* California */
-#timeline:has(.event02[data-viewstate="active"]) .map {
-    --background-size: 400%;
+#timeline:has(.event-ca[data-viewstate="active"]) .map {
+    --background-size: 700%;
     --background-position: 48% 48%;
 }
 
 /* Wyoming */
-#timeline:has(.event03[data-viewstate="active"]) .map {
-    --background-size: 600%;
+#timeline:has(.event-wy[data-viewstate="active"]) .map {
+    --background-size: 800%;
     --background-position: 52% 42%;
 }
 
 /* Mississippi */
-#timeline:has(.event04[data-viewstate="active"]) .map {
+#timeline:has(.event-ms[data-viewstate="active"]) .map {
     --background-size: 700%;
     --background-position: 57% 52%;
 }
 
 /* EU */
-#timeline:has(.event05[data-viewstate="active"]) .map {
+#timeline:has(.event-eu[data-viewstate="active"]) .map {
     --background-size: 700%;
     --background-position: 90% 42%;
 }
 
 /* New York */
-#timeline:has(.event06[data-viewstate="active"]) .map {
+#timeline:has(.event-ny[data-viewstate="active"]) .map {
     --background-size: 600%;
     --background-position: 62% 44%;
 }
