@@ -936,7 +936,8 @@ html {
 .works-cca,
 .works-sentinel,
 .works-jazz,
-.works-books {
+.works-books,
+.works-painting {
     /* Centering the child (row): sections are the grandparents */
     min-height: 100vh;
     display: grid;
