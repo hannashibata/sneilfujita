@@ -7,14 +7,14 @@
 /* SMALL SCREENS (Mobile , 767px) */
 body {
     /* Set the default font size */
-    font-size: 87.5%;
+    font-size: 75%;
 }
 
 /* MEDIUM SCREENS ( Tablets < 1200px ) */
 @media (min-width: 768px) {
     body {
         /* Set the medium screens and highr font size to 16px */
-        font-size: 100%;
+        font-size: 75%;
     }
 }
 
@@ -23,7 +23,7 @@ body {
 @media (min-width: 1200px) {
     body {
         /* Set the medium screens and highr font size to 16px */
-        font-size: 112.5%;
+        font-size: 87.5%;
     }
 }
 

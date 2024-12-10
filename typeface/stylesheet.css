@@ -10,15 +10,3 @@
     font-style: normal;
 
 }
-
-
-
-
-@font-face {
-    font-family: 'corleone_dueregular';
-    src: url('corleone-due-regular-webfont.woff2') format('woff2'),
-         url('corleone-due-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
