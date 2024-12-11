@@ -889,6 +889,7 @@ html {
             rotate: -90deg;
             translate: -25% 400%;
             width: 200%;
+            text-align: center;
         }
 
     }
@@ -1041,6 +1042,10 @@ html {
     margin: 0 1em 0 2em;
 }
 
+.page-timeline .hero h3 {
+    margin: 0 2em 0 3em;
+}
+
 .puppetmaster {
     margin-inline: auto;
 }
@@ -1060,16 +1065,7 @@ html {
     .event {
         /* laying out copy and image */
         display: grid;
-
-        /* margin: 0;
-        padding: 0 0; */
-        /* padding: 50vh 6em; */
-        /* min-height: 110svh; */
-        /* border: 1px solid green; */
-        /* margin-top: 50vh; */
-        /* margin-bottom: 60vh; */
-
-        
+             
         /* Margin triggers the animation when there is no image: margin spaces out */
         margin: 70vh 0;
 
@@ -1085,7 +1081,8 @@ html {
         background-repeat: no-repeat;
 
         /*  this is the default animation starting point    */
-        --background-size: 100%;
+        /* --background-size: 100%; */
+        --background-size: cover;
         --background-position: 50% 50%;
         background-size: var(--background-size);
         background-position: var(--background-position);
