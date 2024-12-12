@@ -211,8 +211,10 @@ p {
 
 blockquote {
     font-family: var(--font-sans-serif);
+    font-size: 1.25em;
     padding: 0;
     margin: 0;
+    font-weight: 600;
 }
 
 /* GLOBAL MEDIA
@@ -761,7 +763,7 @@ html {
 }
 
 .bierut blockquote {
-    margin: 0 2em;
+    margin: 4em;
 }
 
 .home-hero-grid {
