@@ -255,6 +255,9 @@ img {
     margin-top: var(--unit-large);
 }
 
+.color-purple {
+    color: var(--color-secondary);
+}
 
 /* QUESTION: mobile display is a mess!!! */
 
@@ -1065,7 +1068,7 @@ html {
     .event {
         /* laying out copy and image */
         display: grid;
-             
+
         /* Margin triggers the animation when there is no image: margin spaces out */
         margin: 70vh 0;
 
