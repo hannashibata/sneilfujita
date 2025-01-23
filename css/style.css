@@ -785,7 +785,7 @@ html {
 .home-hero-grid-item.red-bg {
     /*  NOTE: grid items read children's size and not parent  */
     margin: 1vh 1vw;
-    padding: 2vh 2vw;
+    padding: 2vh 4vw;
 }
 
 .top01 {
@@ -802,7 +802,8 @@ html {
     width: 90%;
     text-align: right;
     font-family: var(--font-special);
-    font-size: 9svh;
+    /* font-size: 9svh; */
+    font-size: calc(3vh + 3vw);
     line-height: 0.9;
     font-weight: normal;
     color: var(--color-light-hero-headings);
@@ -860,13 +861,13 @@ html {
 
     .home-hero-grid-item.red-bg-title {
         /* padding-left: 8vw; */
-        padding: 8vw 0 0 8vw;
+        padding: 8vw 3vw 0 8vw;
     }
 
     .top02 {
         width: 100%;
         text-align: left;
-        font-size: 8vw;
+        /* font-size: 8vw; */
     }
 
 
