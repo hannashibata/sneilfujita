@@ -55,11 +55,11 @@ CSS TABLE OF CONTENTS
 
 :root {
     /* COLORS */
-    --color-primary: #E63A0C;
-    --color-secondary: #AB4D83;
+    --color-primary: #E63B0E;
+    --color-secondary: #BA6194;
     --color-tertiary: #FD9F00;
-    --color-black: #2F3A36;
-    --color-white: #E9E7DA;
+    --color-black: #242B28;
+    --color-white: #F2F0E3;
 
     --color-body-bg: var(--color-white);
     --color-text-body-black: var(--color-black);
@@ -215,6 +215,11 @@ blockquote {
     padding: 0;
     margin: 0;
     font-weight: 600;
+    font-style: italic;
+}
+
+cite {
+    font-style: normal;
 }
 
 /* GLOBAL MEDIA
@@ -918,9 +923,9 @@ html {
 }
 
 /* Rotated images */
-.rotate-5 {
+/* .rotate-5 {
     rotate: -5deg;
-}
+} */
 
 
 
@@ -961,10 +966,13 @@ html {
     text-transform: uppercase;
 }
 
+figcaption,
 .credit {
-    font-size: 75%;
+    font-size: 60%;
     font-family: var(--font-sans-serif);
     font-weight: 400;
+    padding-top: .5em;
+    padding-left: 1em;
 }
 
 /* SUBPAGE: SELECTED WORKS
