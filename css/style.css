@@ -58,7 +58,8 @@ CSS TABLE OF CONTENTS
     --color-primary: #E63B0E;
     --color-secondary: #BA6194;
     --color-tertiary: #FD9F00;
-    --color-black: #242B28;
+    --color-black: #2F3A36;
+    /* --color-black: #242B28; */
     --color-white: #F2F0E3;
 
     --color-body-bg: var(--color-white);
@@ -514,7 +515,7 @@ img {
 /* SECTIONS
 ----------------------------------------------- */
 section {
-    padding: var(--unit-large) var(--unit-small);
+    padding: var(--unit-large);
 }
 
 /* HERO SECTION */
@@ -737,7 +738,7 @@ html {
 
     span.span-about {
         rotate: 30deg;
-        translate: 15% 200%;
+        translate: 0 200%;
     }
 
     span.span-works {
@@ -764,11 +765,12 @@ html {
 .bierut {
     background-color: var(--color-primary);
     color: var(--color-white);
-    clip-path: polygon(0 20%, 100% 0, 100% 50%, 3% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 75%, 3% 100%);
+    /* padding-bottom: 5em; */
 }
 
 .bierut blockquote {
-    margin: 4em;
+    margin: 5em 4em 4.5em 4em;
 }
 
 .home-hero-grid {
@@ -777,6 +779,10 @@ html {
     list-style: none;
     grid-template-columns: 3.5% 4.5% 7% 2% 28% 7% 8% 15% 25%;
     grid-template-rows: 30% 2% 2% 18% 24% 2% 10% 12%;
+
+    @media(max-width: 767px) {
+        margin-bottom: 2em;
+    }
 }
 
 .home-hero-grid img {
@@ -966,11 +972,18 @@ html {
     text-transform: uppercase;
 }
 
-figcaption,
 .credit {
     font-size: 60%;
     font-family: var(--font-sans-serif);
     font-weight: 400;
+    /* padding-top: .5em;
+    padding-left: 1em; */
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+
+figcaption {
     padding-top: .5em;
     padding-left: 1em;
 }
