@@ -92,7 +92,7 @@ CSS TABLE OF CONTENTS
 
     /* TYPEFACES */
     --font-body: 'Roboto', system-ui, Arial, sans-serif;
-    --font-sans-serif: 'Besley', Georgia, serif;
+    --font-serif: 'Besley', Georgia, serif;
     --font-special: 'corleone_dueregular';
 
     /* SIZING UNITS */
@@ -166,7 +166,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-serif);
     margin: .4em 0;
 }
 
@@ -211,7 +211,7 @@ p {
 }
 
 blockquote {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-serif);
     font-size: 1.25em;
     padding: 0;
     margin: 0;
@@ -563,12 +563,16 @@ section {
     }
 
     h5 {
-        font-family: var(--font-sans-serif);
+        font-family: var(--font-serif);
         font-weight: 400;
     }
 
     a {
         color: var(--color-sitefooter-a);
+    }
+
+    a:hover {
+        color: var(--color-tertiary);
     }
 
     .site-footer-nav {
@@ -587,6 +591,11 @@ section {
             display: grid;
             align-items: center;
         }
+    }
+
+    /* QUESTION: why is the color white? */
+    hr.footnote {
+        border-top: var(--color-black);
     }
 
 }
@@ -727,7 +736,7 @@ html {
 .red-bg-title,
 .red-bg {
     background-color: var(--color-primary);
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-serif);
 
     span {
         text-transform: uppercase;
@@ -972,16 +981,20 @@ html {
     text-transform: uppercase;
 }
 
+
+figcaption,
 .credit {
-    font-size: 60%;
-    font-family: var(--font-sans-serif);
+    font-size: 70%;
+    font-family: var(--font-serif);
     font-weight: 400;
+}
+
+.credit {
     /* padding-top: .5em;
     padding-left: 1em; */
     padding-top: 2em;
     padding-left: 2em;
 }
-
 
 figcaption {
     padding-top: .5em;
