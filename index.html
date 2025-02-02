@@ -20,18 +20,15 @@
     <!-- Corleone -->
     <link rel="stylesheet" href="typeface/stylesheet.css">
 
-
     <!-- MAIN CSS STYLE -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-home">
 
+    <!-- QUESTION: There is no header in home page; but when I delete the html, it breaks the whole thing. Why? -->
     <header class="site-header on-top-of-herox hide-visually">
         <div class="site-logo">
-            <a href="index.html">
-                <img src="img/placeholder-logo-500x500.svg" alt="logo" width="50" height="50">
-            </a>
             <h1><a href="index.html">S.Neil Fujita</a></h1>
         </div>
 
@@ -54,6 +51,17 @@
 
 
     <main class="site-main">
+
+        <div class="splash-screen">
+            <div class="splash-logo">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"></script>
+      
+              <dotlottie-player class="puppetmaster animate-from-top observe-me parallax-onscrollx" data-parallax-speed="1"
+                src="img/puppetmaster.json" background="transparent" speed="1" style="width: 35vw; height: 35vw;"
+                autoplay></dotlottie-player>
+            </div>
+        </div>
 
         <section class="hero">
 

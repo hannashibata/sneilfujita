@@ -33,6 +33,7 @@ CSS TABLE OF CONTENTS
 
 # ANIMATION
     # SMOOTH SCROLLING
+    # PAGE LOADER
 
 # CUSTOM STYLING
 
@@ -610,6 +611,80 @@ section {
 /* ANIMATION */
 /* ----------------------------------------------- */
 
+/* PAGE LOADER ANIMATION */
+/* SPLASH SCREEN UI */
+.splash-screen {
+    position: fixed;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    width: 100%;
+    height: 120svh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation-name: splash-chuck;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0, 1, 0);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    z-index: 100; 
+    /* QUESTION: why does this need z-index? */
+}
+
+/* SPLASH SCREEN ANIMATION */
+/* .splash-logo {
+    animation-name: splash-logo-fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes splash-logo-fadein {
+    0% {
+        opacity: 0;
+        scale: .8;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+} */
+
+@keyframes splash-chuck {
+    0% {
+        translate: 0 0;
+    }
+
+    100% {
+        translate: 0 -100%;
+    }
+}
+
+/* LOGO ANIMATION  <=== Puppet master does not need css */
+/* .shape1 {
+    animation: grow-from-right 1s forwards ease-out .5s;
+    scale: 0 1;
+}
+
+@keyframes grow-from-right {
+    100% {
+        scale: 1 1;
+    }
+}
+
+.shape2 {
+    animation: grow-from-left 1s forwards ease-out 1.5s;
+    scale: 0 1;
+    transform-origin: right center;
+}
+
+@keyframes grow-from-left {
+    100% {
+        scale: 1 1;
+    }
+} */
+
 /* ADD SUPPORT FOR SMOOTH SCROLLING */
 html {
     scroll-behavior: smooth;
@@ -619,6 +694,10 @@ html {
  * corresponding with JS
  */
 
+.hero .observe-me {
+    transition-delay: 3s;
+}
+
 .observe-me {
     opacity: 0;
     transition: all .75s ease-out 0.5s;
@@ -627,6 +706,7 @@ html {
         opacity: 1;
     }
 }
+
 .animate-from-top {
     translate: 0 -100px;
 
@@ -909,6 +989,7 @@ html {
     }
 
     .red-bg {
+
         span.span-about,
         span.span-works,
         span.span-timeline {
@@ -923,9 +1004,8 @@ html {
     .bierut {
         clip-path: polygon(0 10%, 100% 0, 100% 80%, 3% 100%);
     }
-    
-}
 
+}
 
 #about .row>* {
     margin-top: 0;
@@ -941,8 +1021,6 @@ html {
 /* .rotate-5 {
     rotate: -5deg;
 } */
-
-
 
 /* CUSTOM STYLING FOR ALL THE SUBPAGES
 -----------------------------------------------
@@ -1112,8 +1190,8 @@ figcaption {
     }
 
     .event00 {
-     margin: 0;
-     padding: 0 0 20vh 0;   
+        margin: 0;
+        padding: 0 0 20vh 0;
     }
 
     .map {
