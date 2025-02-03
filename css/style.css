@@ -662,6 +662,10 @@ section {
 }
 
 /* LOGO ANIMATION  <=== Puppet master does not need css */
+/* .puppetmaster {
+    margin-inline: auto;
+} */
+
 /* .shape1 {
     animation: grow-from-right 1s forwards ease-out .5s;
     scale: 0 1;
@@ -780,6 +784,15 @@ html {
 .animate-from-bottom {
     translate: 0 20px;
     transition-delay: .5s;
+
+    &[data-viewstate="active"] {
+        translate: 0 0;
+    }
+}
+
+.slide-up {
+    translate: 0 200px;
+    transition-delay: .25s;
 
     &[data-viewstate="active"] {
         translate: 0 0;
@@ -1136,14 +1149,16 @@ figcaption {
 /* SUBPAGE: TIMELINE
 ----------------------------------------------- */
 
+/* Refactor: Can this be merged with other pages? */
 .page-timeline header a {
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .page-timeline .hero {
     height: 100svh;
-    background-color: var(--color-black);
-    color: var(--color-white);
+    /* background-color: var(--color-black); */
+    background-color: transparent;
+    color: var(--color-black);
     padding: 0;
     /* display: block; */
     display: flex;
@@ -1152,20 +1167,8 @@ figcaption {
     text-align: center;
 }
 
-.page-timeline .hero h2 {
-    font-family: var(--font-special);
-    font-weight: normal;
-    font-size: 3em;
-    line-height: 0.9;
-    margin: 0 1em 0 2em;
-}
-
 .page-timeline .hero h3 {
     margin: 0 2em 0 3em;
-}
-
-.puppetmaster {
-    margin-inline: auto;
 }
 
 .page-timeline .site-menu {
