@@ -224,6 +224,17 @@ cite {
     font-style: normal;
 }
 
+time {
+    /* QUESTION: why is oldstyle not working? */
+    font-family: var(--font-serif);
+    font-size: 3em;
+    font-weight: 900;
+    font-variant-numeric: oldstyle-nums;
+    color: var(--color-secondary);
+    margin: 0 0 -1em 0;
+    padding: 0;
+}
+
 /* GLOBAL MEDIA
  * Make all images shrink on small screens
 /* ----------------------------------------------- */
@@ -1308,9 +1319,9 @@ figcaption {
     color: rgb(0 0 0 /0.5);
 } */
 
-/* body * {
+body * {
     border: 1px solid blue;
-} */
+}
 
 /* .home-hero-grid-item {
     border: 2px solid blue;
