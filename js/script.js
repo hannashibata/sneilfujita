@@ -53,3 +53,10 @@ mytargets.forEach((el) => {
   myobserver.observe(el);
   
 });
+
+// AFTER 3 SECONDS SET DATA ATTRIBUTE SAYS THAT PAGE IS LOADED
+const myTimeout = setTimeout(setPageLoaded, 5000);
+
+function setPageLoaded() {
+  document.body.setAttribute('data-page-loaded', 'page-loaded');
+}

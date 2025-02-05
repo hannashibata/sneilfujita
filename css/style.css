@@ -54,6 +54,21 @@ CSS TABLE OF CONTENTS
  * Definitions for commonly used colors, typeface, sizing-units.
 /* -----------------------------------------------  */
 
+@font-face {
+    font-family: 'corleone_dueregular';
+    src: url('../typeface/corleone-due-regular-webfont.woff2') format('woff2'),
+         url('../typeface/corleone-due-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Besley-oldnums';
+    src: url('../typeface/besley/Besley-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     /* COLORS */
     --color-primary: #E63B0E;
@@ -225,10 +240,9 @@ cite {
 }
 
 time {
-    /* QUESTION: why is oldstyle not working? */
-    font-family: var(--font-serif);
+    font-family: 'Besley-oldnums';
     font-size: 3em;
-    font-weight: 900;
+    /* font-weight: 900; */
     font-variant-numeric: oldstyle-nums;
     color: var(--color-secondary);
     margin: 0 0 -1em 0;
@@ -629,10 +643,11 @@ section {
     background-color: var(--color-black);
     color: var(--color-white);
     width: 100%;
-    height: 120svh;
+    height: 100svh;
     display: grid;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    align-items: end;
     animation-name: splash-chuck;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(1, 0, 1, 0);
@@ -642,37 +657,33 @@ section {
     /* QUESTION: why does this need z-index? */
 }
 
-/* SPLASH SCREEN ANIMATION */
-/* .splash-logo {
-    animation-name: splash-logo-fadein;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+.splash-logo {
+    border: 2px solid red;
 }
 
-@keyframes splash-logo-fadein {
-    0% {
-        opacity: 0;
-        scale: .8;
-    }
-
-    100% {
-        opacity: 1;
-        scale: 1;
-    }
-} */
+.splash-logo .puppetmaster {
+    /* width: 100vw;  */
+    height: 100svh;
+}
 
 @keyframes splash-chuck {
     0% {
         translate: 0 0;
     }
 
+    99% {
+        translate: 0 -100%;
+        opacity: 1;
+    }
+
     100% {
         translate: 0 -100%;
+        opacity: 0;
+        z-index: -1;
     }
 }
 
-/* LOGO ANIMATION  <=== Puppet master does not need css */
+/* LOGO ANIMATION  */
 /* .puppetmaster {
     margin-inline: auto;
 } */
@@ -709,7 +720,7 @@ html {
  * corresponding with JS
  */
 
-.hero .observe-me {
+[data-page-loaded="not-loaded"] .hero .observe-me {
     transition-delay: 3s;
 }
 
