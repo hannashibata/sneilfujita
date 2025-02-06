@@ -657,10 +657,6 @@ section {
     /* QUESTION: why does this need z-index? */
 }
 
-.splash-logo {
-    border: 2px solid red;
-}
-
 .splash-logo .puppetmaster {
     /* width: 100vw;  */
     height: 100svh;
@@ -688,28 +684,6 @@ section {
     margin-inline: auto;
 } */
 
-/* .shape1 {
-    animation: grow-from-right 1s forwards ease-out .5s;
-    scale: 0 1;
-}
-
-@keyframes grow-from-right {
-    100% {
-        scale: 1 1;
-    }
-}
-
-.shape2 {
-    animation: grow-from-left 1s forwards ease-out 1.5s;
-    scale: 0 1;
-    transform-origin: right center;
-}
-
-@keyframes grow-from-left {
-    100% {
-        scale: 1 1;
-    }
-} */
 
 /* ADD SUPPORT FOR SMOOTH SCROLLING */
 html {
@@ -720,6 +694,7 @@ html {
  * corresponding with JS
  */
 
+ /* QUESTION: why is this not working for the subpages? */
 [data-page-loaded="not-loaded"] .hero .observe-me {
     transition-delay: 3s;
 }
