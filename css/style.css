@@ -684,7 +684,6 @@ section {
     margin-inline: auto;
 } */
 
-
 /* ADD SUPPORT FOR SMOOTH SCROLLING */
 html {
     scroll-behavior: smooth;
@@ -694,7 +693,7 @@ html {
  * corresponding with JS
  */
 
- /* QUESTION: why is this not working for the subpages? */
+ /* QUESTION: why is this not working for the works page? */
 [data-page-loaded="not-loaded"] .hero .observe-me {
     transition-delay: 3s;
 }
@@ -858,7 +857,6 @@ html {
 .red-bg:hover {
     transform: scale(1.1);
     transition-duration: .25s;
-    /* QUESTION: what would be the best way to move the surrounding elements? */
 }
 
 .bierut {
