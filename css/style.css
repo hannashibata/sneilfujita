@@ -1141,12 +1141,18 @@ figcaption {
     background-color: var(--color-tertiary);
 }
 
-/* SUBPAGE: TIMELINE
+/* SUBPAGE: TIMELINE PAGE
 ----------------------------------------------- */
 
 /* Refactor: Can this be merged with other pages? */
 .page-timeline header a {
     color: var(--color-black);
+}
+
+/* QUESTION: why is this styling not working? specifity? */
+.page-timeline .blockquote {
+    width: 66ch;
+    font-size: 25em;
 }
 
 .page-timeline .hero {
