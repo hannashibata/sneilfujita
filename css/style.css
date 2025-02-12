@@ -715,6 +715,27 @@ html {
     }
 }
 
+/* Additional animation when using parallax */
+.animate-from-top-02 {
+    z-index: -1;
+
+    &[data-viewstate="active"] {
+        animation: animate-from-top-02 2s ease-out 3s forwards;
+    }
+}
+
+@keyframes animate-from-top-02 {
+    from {
+        color: rgb(0 0 0 / 0);
+        margin-top: -100px;
+    }
+
+    to {
+        color: rgb(0 0 0 / 1);
+        margin-top: 0;
+    }
+}
+
 .animate-from-upperleft01 {
     translate: -20px -70px;
 
