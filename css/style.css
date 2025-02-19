@@ -161,9 +161,9 @@ a {
 
 /* Change typeface while hovering in site-nav */
 nav a:hover {
-    font-family: var(--font-special);
-    font-size: 1.5em;
-    font-weight: normal;
+    /* font-family: var(--font-special);
+    font-size: 1.5em; */
+    font-weight: bold;
 }
 
 /* GLOBAL TYPOGRAPHY
@@ -606,16 +606,27 @@ section {
             list-style: none;
             margin: 0;
             padding: 0;
-            font-size: 2em;
-            line-height: 1;
-            font-weight: bold;
+            /* font-weight: bold; */
             text-transform: uppercase;
         }
 
         li {
-            min-height: 1.5em;
-            display: grid;
-            align-items: center;
+            /* min-height: 1.5em; */
+            /* display: grid; */
+            /* align-items: center; */
+            /* white-space: nowrap; */
+            font-size: 2em;
+            line-height: 1.4;
+            /* line-height: 45px; */
+            margin-top: .45em;
+            font-size: 4.25em;
+            line-height: .85;
+            /* margin-top: .45em; */
+            
+        }
+
+        a {
+            font-weight: bold;
         }
     }
 
@@ -693,7 +704,6 @@ html {
  * corresponding with JS
  */
 
- /* QUESTION: why is this not working for the works page? */
 [data-page-loaded="not-loaded"] .hero .observe-me {
     transition-delay: 3s;
 }
@@ -1124,6 +1134,19 @@ figcaption {
     z-index: 100;
 }
 
+.page-works h3 {
+    font-size: 3em;
+    line-height: 1.2;
+    /* text-transform: capitalize; */
+    text-wrap: balance;
+}
+
+.page-works h4 {
+    font-size: 2em;
+    /* text-transform: capitalize; */
+    text-wrap: balance;
+}
+
 /* .hero:has(.sub-home-hero) {
     padding: 0;
 } */
@@ -1140,7 +1163,7 @@ figcaption {
 
     /* Centering the columns(grandchild) */
     .row {
-        align-items: center;
+        /* align-items: center; */
     }
 }
 
