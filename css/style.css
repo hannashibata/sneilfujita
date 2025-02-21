@@ -226,6 +226,7 @@ p {
     text-wrap: pretty;
 }
 
+/* Styling for quotes */
 blockquote {
     font-family: var(--font-serif);
     font-size: 1.25em;
@@ -239,6 +240,11 @@ cite {
     font-style: normal;
 }
 
+blockquote span {
+    font-style: normal;
+}
+
+/* Styling for years */
 time {
     font-family: 'Besley-oldnums';
     font-size: 3em;
@@ -289,9 +295,16 @@ img {
     margin-top: var(--unit-large);
 }
 
-.color-purple {
+/* .color-purple {
     color: var(--color-secondary);
+} */
+
+/* For copies on dark background */
+.on-dark-bg {
+    color: var(--color-white);
 }
+
+
 
 /* QUESTION: mobile display is a mess!!! */
 
@@ -863,6 +876,7 @@ html {
         display: block;
         text-align: right;
         font-size: 0.75em;
+        font-weight: 700;
     }
 
     span.span-about {
@@ -996,6 +1010,7 @@ html {
 }
 
 
+/* QUESTION: on mibile, the nav and the copy on hero looks not bad */
 @media (max-width: 767px) {
 
     .home-hero-grid-item.red-bg-title {
@@ -1035,8 +1050,13 @@ html {
             rotate: -90deg;
             translate: -25% 400%;
             width: 200%;
-            text-align: center;
+            text-align: left;
         }
+
+        /* span.span-about {
+            text-align: right;
+
+        } */
 
     }
 
@@ -1136,7 +1156,7 @@ figcaption {
 
 .page-works h3 {
     font-size: 3em;
-    line-height: 1.2;
+    line-height: 1.1;
     /* text-transform: capitalize; */
     text-wrap: balance;
 }
