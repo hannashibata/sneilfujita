@@ -232,7 +232,7 @@ blockquote {
     font-size: 1.25em;
     padding: 0;
     margin: 0;
-    font-weight: 600;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -242,6 +242,10 @@ cite {
 
 blockquote span {
     font-style: normal;
+}
+
+.quote {
+    font-weight: 600;
 }
 
 /* Styling for years */
@@ -594,7 +598,7 @@ section {
         font-family: var(--font-special);
         font-weight: normal;
         font-size: 4.25em;
-        line-height: 0.85;
+        line-height: .85;
         color: var(--color-sitefooter-headings);
         text-align: right;
         margin: 0;
@@ -628,10 +632,10 @@ section {
             /* display: grid; */
             /* align-items: center; */
             /* white-space: nowrap; */
-            font-size: 2em;
-            line-height: 1.4;
+            /* font-size: 2em;
+            line-height: 1.4; */
             /* line-height: 45px; */
-            margin-top: .45em;
+            /* margin-top: .45em; */
             font-size: 4.25em;
             line-height: .85;
             /* margin-top: .45em; */
@@ -1076,11 +1080,6 @@ html {
     text-transform: uppercase;
 }
 
-/* Rotated images */
-/* .rotate-5 {
-    rotate: -5deg;
-} */
-
 /* CUSTOM STYLING FOR ALL THE SUBPAGES
 -----------------------------------------------
  * Shared styling
@@ -1214,9 +1213,14 @@ figcaption {
 }
 
 /* QUESTION: why is this styling not working? specifity? */
-.page-timeline .blockquote {
-    width: 66ch;
-    font-size: 25em;
+.page-timeline blockquote {
+    width: 50vw;
+    font-size: 1.5em;
+}
+
+.page-timeline .quote {
+    font-size: 2em;
+    line-height: 1.2;
 }
 
 .page-timeline .hero {
