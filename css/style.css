@@ -916,7 +916,7 @@ html {
 }
 
 .bierut blockquote {
-    margin: 5em 4em 4.5em 4em;
+    margin: 5em 4vw 4.5em 4vw;
 }
 
 .home-hero-grid {
@@ -926,10 +926,18 @@ html {
     grid-template-columns: 3.5% 4.5% 7% 2% 28% 7% 8% 15% 25%;
     grid-template-rows: 30% 2% 2% 18% 24% 2% 10% 12%;
 
-    @media(max-width: 767px) {
+    /* @media(max-width: 767px) {
         margin-bottom: 2em;
+    } */
+}
+
+@media(max-width: 767px) {
+    .page-home .hero {
+        padding-bottom: 8em;
     }
 }
+
+    
 
 .home-hero-grid img {
     width: 100%;
@@ -1052,8 +1060,8 @@ html {
         span.span-works,
         span.span-timeline {
             rotate: -90deg;
-            translate: -25% 400%;
-            width: 200%;
+            translate: -25% 300%;
+            width: 100%;
             text-align: left;
         }
 
@@ -1208,11 +1216,10 @@ figcaption {
 ----------------------------------------------- */
 
 /* Refactor: Can this be merged with other pages? */
-.page-timeline header a {
+/* .page-timeline header a {
     color: var(--color-black);
-}
+} */
 
-/* QUESTION: why is this styling not working? specifity? */
 .page-timeline blockquote {
     width: 50vw;
     font-size: 1.5em;
@@ -1271,13 +1278,11 @@ figcaption {
         background-repeat: no-repeat;
 
         /*  this is the default animation starting point    */
-        /* --background-size: 100%; */
         --background-size: cover;
         --background-position: 50% 50%;
         background-size: var(--background-size);
         background-position: var(--background-position);
         height: 100svh;
-        /* background-color: red; */
 
         /*  div is fixed to the parent    */
         position: fixed;
