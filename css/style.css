@@ -160,6 +160,10 @@ a {
 }
 
 /* Change typeface while hovering in site-nav */
+nav a {
+    text-decoration: none;
+}
+
 nav a:hover {
     /* font-family: var(--font-special);
     font-size: 1.5em; */
@@ -265,6 +269,10 @@ time {
 img {
     max-width: 100%;
     height: auto;
+}
+
+figure {
+    margin: 1.5em 0;
 }
 
 /* GLOBAL HELPERS
