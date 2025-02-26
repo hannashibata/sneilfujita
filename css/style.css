@@ -219,7 +219,7 @@ h4 {
 
 h5 {
     font-family: var(--font-body);
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.3;
 }
 
@@ -944,8 +944,6 @@ html {
         padding-bottom: 8em;
     }
 }
-
-    
 
 .home-hero-grid img {
     width: 100%;
