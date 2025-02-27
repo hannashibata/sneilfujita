@@ -5,6 +5,7 @@
 /* BUTTONS */
 .button {
     /* SET THE BUTTON COLORS */
+    clip-path: polygon(0 0, 93% 0, 100% 83%, 5% 100%);
     border: 1px solid var(--color-black);
     border-radius: 2px;
     background-color: var(--color-black);
@@ -14,7 +15,7 @@
 
     /* ENABLE BOX MODEL STYLING */
     display: inline-block;
-    padding: var(--unit-small);
+    padding: var(--unit-medium);
     margin: var(--unit-small) 0;
 
     /* GET RID OF THE UNDERLINE */

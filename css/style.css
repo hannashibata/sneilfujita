@@ -898,7 +898,7 @@ html {
 
     span.span-about {
         rotate: 30deg;
-        translate: 0 200%;
+        translate: 0 100%;
     }
 
     span.span-works {
@@ -944,12 +944,6 @@ html {
     } */
 }
 
-@media(max-width: 767px) {
-    .page-home .hero {
-        padding-bottom: 8em;
-    }
-}
-
 .home-hero-grid img {
     width: 100%;
     height: 100%;
@@ -974,7 +968,7 @@ html {
 .top02 {
     grid-column: 4 / 10;
     grid-row: 1 / 1;
-    clip-path: polygon(0 0, 97% 0, 100% 80%, 10% 100%);
+    clip-path: polygon(2% 0, 97% 0, 100% 80%, 10% 100%);
     width: 90%;
     text-align: right;
     font-family: var(--font-special);
@@ -1065,21 +1059,25 @@ html {
         grid-row: 6 / 9;
     }
 
+    .btm03.credit {
+        color: rgb(0 0 0 / 0);
+    }
+
     .red-bg {
 
         span.span-about,
         span.span-works,
         span.span-timeline {
             rotate: -90deg;
-            translate: -25% 300%;
+            translate: 0 250%;
             width: 100%;
             text-align: left;
         }
 
-        /* span.span-about {
-            text-align: right;
+        span.span-works {
+            translate: 0 300%;
 
-        } */
+        }
 
     }
 
