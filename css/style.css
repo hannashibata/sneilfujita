@@ -249,7 +249,7 @@ blockquote span {
 }
 
 .quote {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Styling for years */
@@ -1184,6 +1184,10 @@ figcaption {
     font-size: 2em;
     /* text-transform: capitalize; */
     text-wrap: balance;
+}
+
+.page-works figure {
+    margin: 0 1ems;
 }
 
 /* .hero:has(.sub-home-hero) {
