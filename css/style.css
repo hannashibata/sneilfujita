@@ -240,6 +240,13 @@ blockquote {
     font-style: italic;
 }
 
+@media(max-width: 767px) {
+    blockquote {
+        font-size: 1em;
+        margin: 0;
+    }
+}
+
 cite {
     font-style: normal;
 }
@@ -603,7 +610,7 @@ section {
     place-items: center;
 
     /* ADD SOME GENERAL PADDING AROUND THE FOOTER */
-    padding: var(--unit-small);
+    padding: var(--unit-large);
 
     h1,
     h2,
@@ -1026,8 +1033,6 @@ html {
     rotate: 4deg;
 }
 
-
-/* QUESTION: on mibile, the nav and the copy on hero looks not bad */
 @media (max-width: 767px) {
 
     .home-hero-grid-item.red-bg-title {
@@ -1130,6 +1135,12 @@ html {
     text-align: center;
 }
 
+@media(max-width: 767px) {
+    .sub-home-hero {
+        width: 100vw;
+    }
+}
+
 .sub-home-hero h2 {
     text-transform: uppercase;
 }
@@ -1168,29 +1179,23 @@ figcaption {
     top: 35%;
     left: 27%;
     width: 30%;
-    z-index: 100;
+    z-index: 10;
 }
 
 .page-works h3 {
     font-size: 3em;
     line-height: 1.1;
-    /* text-transform: capitalize; */
     text-wrap: balance;
 }
 
 .page-works h4 {
     font-size: 2em;
-    /* text-transform: capitalize; */
     text-wrap: balance;
 }
 
 .page-works figure {
-    margin: 0 1ems;
+    margin: 0 1em;
 }
-
-/* .hero:has(.sub-home-hero) {
-    padding: 0;
-} */
 
 .works-cca,
 .works-sentinel,
@@ -1211,7 +1216,6 @@ figcaption {
 .works-sentinel,
 .works-books {
     background-color: var(--color-dark-bg);
-    /* color: var(--color-white); */
 
     h1,
     h2,
@@ -1242,6 +1246,19 @@ figcaption {
 .page-timeline .quote {
     font-size: 2em;
     line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+    
+    .page-timeline blockquote {
+        width: 50vw;
+        font-size: 1.5em;
+    }
+    
+    .page-timeline .quote {
+        font-size: 2em;
+        line-height: 1.2;
+    }
 }
 
 .page-timeline .hero {

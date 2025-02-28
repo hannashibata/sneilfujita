@@ -5,7 +5,7 @@
 /* BUTTONS */
 .button {
     /* SET THE BUTTON COLORS */
-    clip-path: polygon(0 0, 93% 0, 100% 83%, 5% 100%);
+    clip-path: polygon(0 0, 93% 10%, 100% 83%, 5% 100%);
     border: 1px solid var(--color-black);
     border-radius: 2px;
     background-color: var(--color-black);
@@ -28,7 +28,7 @@
     &:hover {
         color: var(--color-black);
         background-color: var(--color-primary);
-        border-color: var(--color-black);
+        border-color: var(--color-primary);
 
     }
 
