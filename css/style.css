@@ -1305,6 +1305,8 @@ figcaption {
 
 /* Animated background/map */
 
+/* QUESTION: why is this map not replaced??? */
+
 #timeline,
 .event {
     display: flex;
