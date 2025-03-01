@@ -1123,6 +1123,12 @@ html {
     z-index: 100;
 }
 
+/* QUESTION: why does this require 110svh??? Can I bring back tggle nav?*/
+@media(max-width: 767px) {
+    .rotated-header {
+        width: 110svh;
+    }
+}
 .site-header ul {
     display: flex;
     list-style: none;
@@ -1180,6 +1186,28 @@ figcaption {
     left: 27%;
     width: 30%;
     z-index: 10;
+}
+
+@media(max-width: 767px) {
+    .page-works .text-wrapper {
+        position: absolute;
+        top: 22%;
+        left: 27%;
+        width: 45%;
+        z-index: 10;
+    }
+
+    .page-works blockquote {
+        margin: 0;
+        font-size: 70%;
+    }
+
+    .page-works .credit {
+        width: 70%;
+        margin-left: 5em;
+        text-align: right;
+    }
+
 }
 
 .page-works h3 {
@@ -1250,24 +1278,17 @@ figcaption {
 
 @media (max-width: 767px) {
     
-    .page-timeline blockquote {
-        width: 50vw;
-        font-size: 1.5em;
-    }
-    
-    .page-timeline .quote {
-        font-size: 2em;
-        line-height: 1.2;
+    .page-timeline .text-wrapper {
+        font-size: 90%;
+        margin: auto;
     }
 }
 
 .page-timeline .hero {
     height: 100svh;
-    /* background-color: var(--color-black); */
     background-color: transparent;
     color: var(--color-black);
     padding: 0;
-    /* display: block; */
     display: flex;
     align-items: center;
     justify-content: center;
