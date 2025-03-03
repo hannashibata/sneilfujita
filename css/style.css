@@ -301,10 +301,6 @@ figure {
     }
 }
 
-/* .display-flex {
-    display: flex;
-} */
-
 .text-align-right {
     text-align: right;
 }
@@ -313,10 +309,6 @@ figure {
 .add-margin-top {
     margin-top: var(--unit-large);
 }
-
-/* .color-purple {
-    color: var(--color-secondary);
-} */
 
 /* For copies on dark background */
 .on-dark-bg {
@@ -1243,7 +1235,7 @@ figcaption {
 
 .works-sentinel,
 .works-books {
-    background-color: var(--color-dark-bg);
+    background-color: var(--color-black);
 
     h1,
     h2,
@@ -1329,7 +1321,7 @@ figcaption {
 
     .map {
         /* background-image: url(../page-timeline/img/fujita-map.svg); */
-        background-image: url(../page-timeline/img/fujita-map-rev.svg);
+        background-image: url(../page-timeline/img/fujita-m);
         background-repeat: no-repeat;
 
         /*  this is the default animation starting point    */
