@@ -1324,8 +1324,8 @@ figcaption {
     }
 
     .map {
-        background-image: url(../page-timeline/img/fujita-map.svg);
-        /* background-image: url(../page-timeline/img/fujita-map-rev.svg); */
+        /* background-image: url(../page-timeline/img/fujita-map.svg); */
+        background-image: url(../page-timeline/img/fujita-map-rev.svg);
         background-repeat: no-repeat;
 
         /*  this is the default animation starting point    */
