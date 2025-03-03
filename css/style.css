@@ -109,7 +109,7 @@ CSS TABLE OF CONTENTS
     /* TYPEFACES */
     --font-body: 'Roboto', system-ui, Arial, sans-serif;
     --font-serif: 'Besley', Georgia, serif;
-    --font-special: 'corleone_dueregular';
+    --font-special: 'corleone_dueregular', 'Besley', Georgia, serif;
 
     /* SIZING UNITS */
     --container-width: 1200px;
@@ -393,7 +393,7 @@ figure {
         /* MAKE SITE NAV LINKS BIG LIKE BUTTONS */
         a {
             display: block;
-            padding: 10px;
+            padding: 10px 20px;
         }
 
     }
@@ -866,7 +866,7 @@ html {
 
 /* CUSTOM TYPEFACE FOR HEADER */
 .site-header h1 {
-    font-family: 'corleone_dueregular';
+    font-family: 'corleone_dueregular', 'Besley', Georgia, serif;
     font-weight: normal;
 }
 
@@ -1120,11 +1120,11 @@ html {
 }
 
 /* QUESTION: why does this require 110svh??? Can I bring back tggle nav?*/
-@media(max-width: 767px) {
+/* @media(max-width: 767px) {
     .rotated-header {
-        width: 110svh;
+        width: 100svh;
     }
-}
+} */
 .site-header ul {
     display: flex;
     list-style: none;
@@ -1132,8 +1132,8 @@ html {
 }
 
 .site-header li {
-    margin-left: 1em;
-    min-width: 180px;
+    /* margin-left: 1em;
+    min-width: 180px; */
     text-align: center;
 }
 
