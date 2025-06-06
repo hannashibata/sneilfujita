@@ -660,7 +660,8 @@ section {
     }
 
     .contact span {
-        font-weight: 600;
+        /* font-weight: 600; */
+        font-style: italic;
     }
     /* QUESTION: why is the color white? */
     hr.footnote {
