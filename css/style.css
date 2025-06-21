@@ -724,11 +724,6 @@ section {
     }
 }
 
-/* LOGO ANIMATION  */
-/* .puppetmaster {
-    margin-inline: auto;
-} */
-
 /* ADD SUPPORT FOR SMOOTH SCROLLING */
 html {
     scroll-behavior: smooth;
@@ -1120,12 +1115,6 @@ html {
     z-index: 100;
 }
 
-/* QUESTION: why does this require 110svh??? Can I bring back tggle nav?*/
-/* @media(max-width: 767px) {
-    .rotated-header {
-        width: 100svh;
-    }
-} */
 .site-header ul {
     display: flex;
     list-style: none;
